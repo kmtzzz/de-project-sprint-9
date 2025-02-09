@@ -1,3 +1,6 @@
+### Результат работы, самопроверка
+Все сервисы работают как локально в docker-compose, так и в кубере в yandex cloud.
+
 ### Ссылка на container registry
   - dds-service: cr.yandex/crp6l1lep170l7db7l4c/dds_service:v2025-02-09-r1
   - cdm-service: cr.yandex/crp6l1lep170l7db7l4c/cdm_service:v2025-02-09-r1
