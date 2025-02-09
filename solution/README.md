@@ -10,5 +10,7 @@ https://datalens.yandex.cloud/nj1pra7svcke9-itogovyy-dashbord?state=3d82629f56
 
 ### Скрины
 ![Деплойменты](screenshots/deployments.png)
+
 ![Данные](screenshots/tables.png)
+
 ![Дашбоард](screenshots/dashboard.png)
