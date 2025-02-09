@@ -21,13 +21,12 @@ if __name__ == '__main__':
     app.logger.setLevel(logging.DEBUG)
 
     # Initialize the config.
-    config = AppConfig()
     consumer = config.kafka_consumer()
     producer = config.kafka_producer()
-    stg_repository = DdsRepository(config.pg_warehouse_db())
+    dds_repository = DdsRepository(config.pg_warehouse_db())
 
     # Initialize the message processor.
-    proc = DdsMessageProcessor(consumer, producer, stg_repository, app.logger)
+    proc = DdsMessageProcessor(consumer, producer, dds_repository, app.logger)
 
     scheduler = BackgroundScheduler()
     scheduler.add_job(func=proc.run, trigger="interval", seconds=25)
