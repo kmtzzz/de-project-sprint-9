@@ -6,5 +6,5 @@ cdm-service: cr.yandex/crp6l1lep170l7db7l4c/cdm_service:v2025-02-09-r1
 https://datalens.yandex.cloud/nj1pra7svcke9-itogovyy-dashbord?state=3d82629f56
 
 ### Скрины
-![Деплойменты](solution/screenshots/deployments.jpg)
+![Деплойменты](solution/screenshots/deployments.png)
 Данные
