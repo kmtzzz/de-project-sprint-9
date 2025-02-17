@@ -1,13 +1,24 @@
-# Проект 9-го спринта
+# Sprint 9 project
 
-### Как работать с репозиторием
-1. В вашем GitHub-аккаунте автоматически создастся репозиторий `de-project-sprint-9` после того, как вы привяжете свой GitHub-аккаунт на Платформе.
-2. Скопируйте репозиторий на свой компьютер. В качестве пароля укажите ваш `Access Token`, который нужно получить на странице [Personal Access Tokens](https://github.com/settings/tokens)):
-	* `git clone https://github.com/{{ username }}/de-project-sprint-9.git`
-3. Перейдите в директорию с проектом: 
-	* `cd de-project-sprint-9`
-4. Выполните проект и сохраните получившийся код в локальном репозитории:
-	* `git add .`
-	* `git commit -m 'my best commit'`
-5. Обновите репозиторий в вашем GitHub-аккаунте:
-	* `git push origin main`
+### Description
+This repository is intended for source code of Sprint 9 project.  
+
+***Technologies used in implementation:***
+1. Yandex Cloud manages services:
+   1. Kafka
+   2. Redis
+   3. Postgres
+   4. Kubernetes
+   5. Container registry
+   6. DataLens (BI)
+3. Python
+4. Docker
+5. Docker-compose
+6. Helm
+
+### Repository structure
+Inside `src` next folders exist:
+- `/src/dags` - DAG, which extracts data from S3 and loads to Vertica STAGING data layer, DAG name is `1_data_import.py`. DAG updating data mart, DAG name is `2_datamart_update.py`.
+- `/src/sql` - DDLs for database model definition in `STAGING`- and `DWH`- layers, as well as script for datamart upload.
+- `/src/py` - in case of Kafka is source, place code for producing and consuming messages from it.
+- `/src/img` -  screenshot of Metabase dashboard built on top of datamart.
