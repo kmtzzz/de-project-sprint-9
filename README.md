@@ -4,7 +4,7 @@
 This repository is intended for source code of Sprint 9 project.  
 
 ***Technologies used in implementation:***
-1. Yandex Cloud manages services (each service deployed from scratch):
+1. Yandex Cloud managed services (each service deployed from scratch):
    1. Kafka
    2. Redis
    3. Postgres
